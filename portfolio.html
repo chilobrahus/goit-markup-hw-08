@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/main.min.css">
     <title>Portfolio</title>
 </head>
 
@@ -23,18 +23,19 @@
         <div class="container header__container">
             <nav class="navigation">
                 <a href="#" class="logo"><span class="logo__web">Web</span>Studio</a>
-    
+
                 <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                             clip-rule="evenodd"></path>
                     </svg>
                 </button>
-    
+
                 <ul class="site-nav">
                     <li class="site-nav__item">
-                        <a href="index.html" class="site-nav__link ">Студія</a>
+                        <a href="index.html" class="site-nav__link">Студія</a>
                     </li>
                     <li class="site-nav__item">
                         <a href="portfolio.html" class="site-nav__link site-nav__link--active">Портфоліо</a>
@@ -93,12 +94,39 @@
                                     функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
                                 </div>
-                                <img 
-                                    class="portfolio__image" 
-                                    srcset="./images/portfolio/1@2x.jpg 2x" 
-                                    src="./images/portfolio/1.jpg" 
-                                    alt="A laptop with an open project" 
-                                />
+                
+
+                                <picture>
+                                    <source srcset="
+                                        images/portfolio/desk/1.jpg    370w,
+                                        images/portfolio/desk/1@2x.jpg 740w" 
+                                        media="(min-width: 1200px)" 
+                                        sizes="(min-width: 1200px) 370px" 
+                                    >
+                                    <source srcset="
+                                        images/portfolio/tab/1.jpg    370w,
+                                        images/portfolio/tab/1@2x.jpg 708w" 
+                                        media="(min-width: 768px)" 
+                                        sizes="(min-width: 768px) 354px" 
+                                    >
+
+                                    <source srcset="
+                                        images/portfolio/mob/1.jpg    370w,
+                                        images/portfolio/mob/1@2x.jpg 900w" 
+                                        media="(min-width: 480px)" 
+                                        sizes="(min-width: 480px) 450px" 
+                                    >
+
+                                    <source srcset="
+                                        images/portfolio/mob/1.jpg    370w,
+                                        images/portfolio/mob/1@2x.jpg 900w" 
+                                        media="(max-width: 479px)" 
+                                        sizes="(max-width: 479px) 450px" 
+                                    >
+
+                                    <img class="portfolio__image" src="images/portfolio/mob/1.jpg" alt="Комп'ютер">
+                                </picture>
+
                             </div>
 
                             <div class="portfolio__box">
@@ -115,12 +143,39 @@
                                     функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
                                 </div>
-                                <img 
-                                    class="portfolio__image" 
-                                    srcset="./images/portfolio/2@2x.jpg 2x" 
-                                    src="./images/portfolio/2.jpg"
-                                    alt="A poster with basketbolists" 
-                                />
+
+                                <picture>
+                                    <source srcset="
+                                         images/portfolio/desk/2.jpg    370w,
+                                        images/portfolio/desk/2@2x.jpg 740w" 
+                                        media="(min-width: 1200px)" 
+                                        sizes="(min-width: 1200px) 370px" 
+                                    >
+                                    <source srcset="
+                                       images/portfolio/tab/2.jpg    370w,
+                                        images/portfolio/tab/2@2x.jpg 708w" 
+                                        media="(min-width: 768px)" 
+                                        sizes="(min-width: 768px) 354px" 
+                                    >
+
+                                    <source srcset="
+                                        images/portfolio/mob/2.jpg    370w,
+                                        images/portfolio/mob/2@2x.jpg 900w
+                                        " media="(min-width: 480px)" 
+                                         sizes="(min-width: 480px) 450px" 
+                                    >
+
+                                    <source srcset="
+                                       images/portfolio/mob/2.jpg    370w,
+                                        images/portfolio/mob/2@2x.jpg 900w"
+                                         media="(max-width: 479px)" 
+                                        sizes="(max-width: 479px) 450px"
+                                    >
+
+                                    <img class="portfolio__image" src="images/portfolio/mob/2.jpg"
+                                        alt="Гравці в баскетбол">
+                                </picture>
+
                             </div>
 
                             <div class="portfolio__box">
@@ -139,12 +194,38 @@
                                     функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
                                 </div>
-                                <img 
-                                    class="portfolio__image" 
-                                    srcset="./images/portfolio/3@2x.jpg 2x" 
-                                    src="./images/portfolio/3.jpg" 
-                                    alt="Seafood restaurant logo" 
-                                />
+
+                                <picture>
+                                    <source srcset="
+                                         images/portfolio/desk/3.jpg    370w,
+                                        images/portfolio/desk/3@2x.jpg 740w
+                                        " media="(min-width: 1200px)" 
+                                        sizes="(min-width: 1200px) 370px" 
+                                    >
+                                    <source srcset="
+                                       images/portfolio/tab/3.jpg    370w,
+                                        images/portfolio/tab/3@2x.jpg 708w"
+                                        media="(min-width: 768px)" 
+                                        sizes="(min-width: 768px) 354px" 
+                                    >
+
+                                    <source srcset="
+                                        images/portfolio/mob/3.jpg    370w,
+                                        images/portfolio/mob/3@2x.jpg 900w"
+                                        media="(min-width: 480px)" 
+                                        sizes="(min-width: 480px) 450px" 
+                                    >
+
+                                    <source srcset="
+                                        images/portfolio/mob/3.jpg    370w,
+                                        images/portfolio/mob/3@2x.jpg 900w"
+                                        media="(max-width: 479px)" 
+                                        sizes="(max-width: 479px) 450px" 
+                                    >
+
+                                    <img class="portfolio__image" src="images/portfolio/mob/3.jpg" alt="Постер ресторану">
+                                </picture>
+
                             </div>
 
                             <div class="portfolio__box">
@@ -161,11 +242,37 @@
                                     функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
                                 </div>
-                                <img 
-                                    class="portfolio__image" 
-                                    srcset="./images/portfolio/4@2x.jpg 2x"
-                                     src="./images/portfolio/4.jpg"
-                                     alt="Heaphones" />
+
+                                <picture>
+                                    <source srcset="
+                                        images/portfolio/desk/4.jpg    370w,
+                                        images/portfolio/desk/4@2x.jpg 740w"
+                                         media="(min-width: 1200px)" 
+                                         sizes="(min-width: 1200px) 370px" 
+                                    >
+                                    <source srcset="
+                                        images/portfolio/tab/4.jpg    370w,
+                                        images/portfolio/tab/4@2x.jpg 708w"
+                                        media="(min-width: 768px)" 
+                                        sizes="(min-width: 768px) 354px" 
+                                    >
+
+                                    <source srcset="
+                                        images/portfolio/mob/4.jpg    370w,
+                                        images/portfolio/mob/4@2x.jpg 900w"
+                                        media="(min-width: 480px)" 
+                                        sizes="(min-width: 480px) 450px" 
+                                    >
+
+                                    <source srcset="
+                                       images/portfolio/mob/4.jpg    370w,
+                                        images/portfolio/mob/4@2x.jpg 900w"
+                                        media="(max-width: 479px)" 
+                                        sizes="(max-width: 479px) 450px" 
+                                    >
+
+                                    <img class="portfolio__image" src=" images/portfolio/mob/4.jpg" alt="Навушники">
+                                </picture>
                             </div>
 
                             <div class="portfolio__box">
@@ -182,12 +289,36 @@
                                     функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
                                 </div>
-                                <img 
-                                    class="portfolio__image" 
-                                    srcset="./images/portfolio/5@2x.jpg 2x" 
-                                    src="./images/portfolio/5.jpg" 
-                                    alt="Two boxes of different sizes" 
-                                />
+                                <picture>
+                                    <source srcset="
+                                         images/portfolio/desk/5.jpg    370w,
+                                        images/portfolio/desk/5@2x.jpg 740w"
+                                        media="(min-width: 1200px)" 
+                                        sizes="(min-width: 1200px) 370px"
+                                    >
+                                    <source srcset="
+                                        images/portfolio/tab/5.jpg    370w,
+                                        images/portfolio/tab/5@2x.jpg 708w"
+                                         media="(min-width: 768px)" 
+                                         sizes="(min-width: 768px) 354px"
+                                    >
+
+                                    <source srcset="
+                                        images/portfolio/mob/5.jpg 370w,
+                                        images/portfolio/mob/5@2x.jpg 900w"
+                                         media="(min-width: 480px)" 
+                                         sizes="(min-width: 480px) 450px" 
+                                    >
+
+                                    <source srcset="
+                                        images/portfolio/mob/5.jpg    370w,
+                                        images/portfolio/mob/5@2x.jpg 900w"
+                                        media="(max-width: 479px)" 
+                                        sizes="(max-width: 479px) 450px"
+                                    >
+
+                                    <img class="portfolio__image" src="images/portfolio/mob/5.jpg" alt="Коробки">
+                                </picture>
                             </div>
 
                             <div class="portfolio__box">
@@ -204,12 +335,37 @@
                                     функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
                                 </div>
-                                <img 
-                                    class="portfolio__image" 
-                                    srcset="./images/portfolio/6@2x.jpg 2x"
-                                    src="./images/portfolio/6.jpg" 
-                                    alt="A PC screen with an open project" 
-                                />
+                                <picture>
+                                    <source srcset="
+                                         images/portfolio/desk/6.jpg    370w,
+                                        images/portfolio/desk/6@2x.jpg 740w"
+                                         media="(min-width: 1200px)" 
+                                         sizes="(min-width: 1200px) 370px" 
+                                    >
+                                    <source srcset="
+                                        images/portfolio/tab/6.jpg    370w,
+                                        images/portfolio/tab/6@2x.jpg 708w"
+                                        media="(min-width: 768px)" 
+                                        sizes="(min-width: 768px) 354px" 
+                                    >
+
+                                    <source srcset="
+                                        images/portfolio/mob/6.jpg    370w,
+                                        images/portfolio/mob/6@2x.jpg 900w"
+                                        media="(min-width: 480px)" 
+                                        sizes="(min-width: 480px) 450px" 
+                                    >
+
+                                    <source srcset="
+                                      images/portfolio/mob/6.jpg    370w,
+                                        images/portfolio/mob/6@2x.jpg 900w"
+                                        media="(max-width: 479px)" 
+                                        sizes="(max-width: 479px) 450px"
+                                    >
+
+                                    <img class="portfolio__image" src="images/portfolio/mob/6.jpg"
+                                        alt="Екран монітора з відкритим сайтом">
+                                </picture>
                             </div>
 
                             <div class="portfolio__box">
@@ -226,12 +382,37 @@
                                     функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
                                 </div>
-                                <img 
-                                    class="portfolio__image" 
-                                    srcset="./images/portfolio/7@2x.jpg 2x " 
-                                    src="./images/portfolio/7.jpg" 
-                                    alt="An open copy of Limited Edition magazine" 
-                                />
+                                <picture>
+                                    <source srcset="
+                                         images/portfolio/desk/7.jpg    370w,
+                                        images/portfolio/desk/7@2x.jpg 740w"
+                                         media="(min-width: 1200px)" 
+                                         sizes="(min-width: 1200px) 370px" 
+                                     >
+                                    <source srcset="
+                                       images/portfolio/tab/7.jpg    370w,
+                                        images/portfolio/tab/7@2x.jpg 708w"
+                                        media="(min-width: 768px)" 
+                                        sizes="(min-width: 768px) 354px" 
+                                    >
+
+                                    <source srcset="
+                                        images/portfolio/mob/7.jpg    370w,
+                                        images/portfolio/mob/7@2x.jpg 900w"
+                                         media="(min-width: 480px)" 
+                                         sizes="(min-width: 480px) 450px" 
+                                    >
+
+                                    <source srcset="
+                                        images/portfolio/mob/7.jpg    370w,
+                                        images/portfolio/mob/7@2x.jpg 900w"
+                                        media="(max-width: 479px)" 
+                                        sizes="(max-width: 479px) 450px" 
+                                    >
+
+                                    <img class="portfolio__image" src=" mages/portfolio/mob/7.jpg.jpg"
+                                        alt="Фото відкритого журналу Limited Edition">
+                                </picture>
                             </div>
 
                             <div class="portfolio__box">
@@ -248,11 +429,36 @@
                                     функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
                                 </div>
-                                <img 
-                                    class="portfolio__image" 
-                                    srcset="./images/portfolio/8@2x.jpg 2x" 
-                                    src="./images/portfolio/8.jpg" 
-                                    alt="LAB logo" />
+                                <picture>
+                                    <source srcset="
+                                         images/portfolio/desk/8.jpg    370w,
+                                        images/portfolio/desk/8@2x.jpg 740w"
+                                         media="(min-width: 1200px)" 
+                                         sizes="(min-width: 1200px) 370px" 
+                                    >
+                                    <source srcset="
+                                        images/portfolio/tab/8.jpg    370w,
+                                        images/portfolio/tab/8@2x.jpg 308w"
+                                         media="(min-width: 768px)"
+                                         sizes="(min-width: 768px) 354px" 
+                                    >
+
+                                    <source srcset="
+                                        images/portfolio/mob/8.jpg    370w,
+                                        images/portfolio/mob/8@2x.jpg 900w"             
+                                        media="(min-width: 480px)" 
+                                        sizes="(min-width: 480px) 450px" 
+                                    >
+
+                                    <source srcset="
+                                        images/portfolio/mob/8.jpg    370w,
+                                        images/portfolio/mob/8@2x.jpg 900w"
+                                         media="(max-width: 479px)" 
+                                         sizes="(max-width: 479px) 450px" 
+                                    >
+
+                                    <img class="portfolio__image" src=" images/portfolio/mob/8.jpg" alt="Фото лейбла LAB" >
+                                </picture>
                             </div>
 
                             <div class="portfolio__box">
@@ -269,12 +475,36 @@
                                     функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
                                 </div>
-                                <img 
-                                    class="portfolio__image" 
-                                    srcset="./images/portfolio/9@2x.jpg 2x" 
-                                    src="./images/portfolio/9.jpg" 
-                                    alt="An open laptop with the hands of man working on it" 
-                                />
+                                <picture>
+                                    <source srcset="
+                                        images/portfolio/desk/9.jpg    370w,
+                                        images/portfolio/desk/9@2x.jpg 740w"
+                                        media="(min-width: 1200px)" 
+                                        sizes="(min-width: 1200px) 370px" 
+                                    >
+                                    <source srcset="
+                                        images/portfolio/tab/9.jpg    354w,
+                                        images/portfolio/tab/9@2x.jpg 708w"
+                                         media="(min-width: 768px)" 
+                                         sizes="(min-width: 768px) 354px" 
+                                    >
+
+                                    <source srcset="
+                                         images/portfolio/mob/9.jpg    370w,
+                                        images/portfolio/mob/9@2x.jpg 900w"
+                                         media="(min-width: 480px)" 
+                                         sizes="(min-width: 480px) 450px" 
+                                    >
+
+                                    <source srcset="
+                                        images/portfolio/mob/9.jpg    370w,
+                                        images/portfolio/mob/9@2x.jpg 900w"
+                                        media="(max-width: 479px)" 
+                                        sizes="(max-width: 479px) 450px" 
+                                    >
+
+                                    <img class="portfolio__image" src="images/portfolio/mob/9.jpg" alt="Ноутбук">
+                                </picture>
                             </div>
 
                             <div class="portfolio__box">
@@ -321,7 +551,7 @@
                     <li class="icons-set__item footer-icons__item">
                         <a href="#" class="icons-set__link">
                             <svg class="icons-set__icon footer-icons__icon">
-                                <use href="images/svg/symbol-defs.svg#icon-twitter-1"></use>
+                                <use href="./images/svg/symbol-defs.svg#icon-twitter-1"></use>
                             </svg>
                         </a>
                     </li>
@@ -345,7 +575,7 @@
             <div class="sign-up">
                 <p class="sign-up__heading">Підпишіться на розсилку</p>
                 <form class="sign-up__form">
-                    <input type="email" placeholder="E-mail" name="sign-up-email" class="sign-up__input" />
+                    <input type="email" placeholder="E-mail" name="sign-up-email" class="sign-up__input">
                     <button type="submit" class="button sign-up__button">
                         Підписатися
                         <svg class="sign-up__icon" width="24px" height="24px">
@@ -371,7 +601,7 @@
                     <a href="./index.html" class="mobile-menu__link">Студія</a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+                    <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current">Портфоліо</a>
                 </li>
                 <li class="mobile-menu__item">
                     <a href="" class="mobile-menu__link">Контакти</a>
@@ -380,28 +610,28 @@
 
             <ul class="mobile-contact">
                 <li class="mobile-contact__item">
-                    <a href="mailto:info@devstudio.com" class="mobile-contact__link">
-                        info@devstudio.com</a>
+                    <a href="mailto:info@devstudio.com" class="mobile-contact__link--phone">
+                        +380961111111</a>
                 </li>
                 <li class="mobile-contact__item">
                     <a href="tel:+380961111111" class="mobile-contact__link">
-                        +380961111111</a>
+                        info@devstudio.com</a>
                 </li>
+            </ul>
 
-                <ul class="social-contacts">
-                    <li class="social-contacts__item">
-                        <a href="#" class="social-contacts__link">Instagram</a>
-                    </li>
-                    <li class="social-contacts__item">
-                        <a href="#" class="social-contacts__link">Twitter</a>
-                    </li>
-                    <li class="social-contacts__item">
-                        <a href="#" class="social-contacts__link">Facebook</a>
-                    </li>
-                    <li class="social-contacts__item">
-                        <a href="#" class="social-contacts__link">LinkedIn</a>
-                    </li>
-                </ul>
+            <ul class="social-contacts">
+                <li class="social-contacts__item">
+                    <a href="#" class="social-contacts__link">Instagram</a>
+                </li>
+                <li class="social-contacts__item">
+                    <a href="#" class="social-contacts__link">Twitter</a>
+                </li>
+                <li class="social-contacts__item">
+                    <a href="#" class="social-contacts__link">Facebook</a>
+                </li>
+                <li class="social-contacts__item">
+                    <a href="#" class="social-contacts__link">LinkedIn</a>
+                </li>
             </ul>
         </div>
     </div>
