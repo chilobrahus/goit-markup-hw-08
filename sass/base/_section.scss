@@ -1,0 +1,32 @@
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    &__title {
+        font-weight: $font-bold;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }
+
+    &--no-padding-top {
+        padding-top: 0;
+
+        @media screen and (max-width: 1199px) {
+            display: none;
+        }
+    }
+
+    &--background {
+        background-color: $background-team;
+    }
+}
+
+

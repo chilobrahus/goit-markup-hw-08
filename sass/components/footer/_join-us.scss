@@ -1,0 +1,30 @@
+.join-us {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-basis: 50%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
+
+    &__title {
+        font-weight: $font-bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+}
+
+.footer-icons {
+    @media screen and (max-width: 1199px) {
+        justify-content: center;
+    }
+}
