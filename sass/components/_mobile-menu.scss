@@ -79,8 +79,7 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
 
-    &:hover,
-    &:active {
+    &--current {
         color: $text-accent;
     }
 }
@@ -103,9 +102,7 @@
 
     text-decoration: none;
 
-    &:visited,
-    &:hover,
-    &:focus {
+    &--phone {
         color: $text-accent;
         font-size: 34px;
         line-height: 1.17;
